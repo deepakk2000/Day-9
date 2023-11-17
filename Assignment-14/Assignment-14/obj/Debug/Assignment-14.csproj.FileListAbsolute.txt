@@ -1,2 +1,7 @@
 D:\.net\Day-9\Assignment-14\Assignment-14\obj\Debug\Assignment-14.csproj.AssemblyReference.cache
 D:\.net\Day-9\Assignment-14\Assignment-14\obj\Debug\Assignment-14.csproj.CoreCompileInputs.cache
+D:\.net\Day-9\Assignment-14\Assignment-14\bin\Debug\Assignment-14.exe.config
+D:\.net\Day-9\Assignment-14\Assignment-14\bin\Debug\Assignment-14.exe
+D:\.net\Day-9\Assignment-14\Assignment-14\bin\Debug\Assignment-14.pdb
+D:\.net\Day-9\Assignment-14\Assignment-14\obj\Debug\Assignment-14.exe
+D:\.net\Day-9\Assignment-14\Assignment-14\obj\Debug\Assignment-14.pdb

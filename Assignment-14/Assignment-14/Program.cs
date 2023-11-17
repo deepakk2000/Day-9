@@ -10,22 +10,29 @@ namespace Assignment_14
     {
         static void Main(string[] args)
         {
-            // Create an instance of LargeDataCollection
-            using (var myCollection = new LargeDataCollection(new List<object> { 1, "Hello", new CustomObject() }))
+            Console.WriteLine("Enter element 1:");
+            int a1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter element 2:");
+            float b = float.Parse(Console.ReadLine());
+            Console.WriteLine("Enter element 3:");
+            char c = char.Parse(Console.ReadLine());
+            Console.WriteLine("Enter element 4:");
+            string d = Console.ReadLine();
+            var a = new object[] { a1, b, c, d, new object() };
+            using (var LargeCollection = new LargeDataCollection(a))
             {
-                // Demonstrate adding, removing, and accessing elements
-                myCollection.AddElement(42);
-                myCollection.RemoveElement("Hello");
-                Console.WriteLine(myCollection.AccessElement(0));
-
-                // Explicitly call Dispose to release resources
-                myCollection.Dispose();
+                LargeCollection.AddElement(44);
+                Console.WriteLine("List after adding an element");
+                LargeCollection.DisplayElement();
+                LargeCollection.RemoveElement(a1);
+                Console.WriteLine("List after removing an element");
+                LargeCollection.DisplayElement();
+                Console.WriteLine("Accessing The elements using index number");
+                Console.WriteLine("Element at Index 0: " + LargeCollection.AccessElement(0));
+                Console.WriteLine("Element at Index 2: " + LargeCollection.AccessElement(2));
             }
-        }
-    }
-
-    class CustomObject
-
+            Console.ReadKey();
         }
     }
 }
+
